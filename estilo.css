@@ -16,7 +16,7 @@ body {
 /***** CONFIGURAÇÃO DO TOPO *****/
 #topo-site {
     width: 960px;
-    height: 180px;
+    height: 180px; /* Ajustado para alinhar perfeitamente com o menu */
     float: left;
     background-color: #206CA6;
 }
@@ -37,18 +37,12 @@ body {
     margin-top: 40px;
 }
 
-#redes-sociais img {
-    width: 50px;
-    height: 50px;
-    margin-left: 8px;
-}
-
 /***** CONFIGURAÇÃO DO MENU *****/
 #menu-site {
     width: 960px;
     height: 40px;
     float: left;
-    margin-top: 33px;
+    margin-top: 33px; /* Empurra o menu exatamente para a base do topo */
     background-color: #022A4F;
 }
 
@@ -83,76 +77,20 @@ body {
     height: 450px;
     float: left;
     margin-top: 10px;
-    background-color: #eee;
+    background-color: #eee; /* Cor de fundo enquanto as imagens carregam */
     clear: both;
-    position: relative;
-    overflow: hidden;
 }
 
 #featured {
-    height: 450px;
-    display: flex;
-    flex-wrap: nowrap;
-    transition: transform 1s ease-in-out;
-}
-
-#featured img {
     width: 960px;
     height: 450px;
+}
+
+#featured img, 
+#slide img {
+    width: 960px !important;
+    height: 450px !important;
     display: block;
-    flex-shrink: 0;
-}
-
-/* Setas de navegação */
-.slide-seta {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(2, 42, 79, 0.6);
-    color: white;
-    border: none;
-    font-size: 28px;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    z-index: 10;
-    line-height: 45px;
-    text-align: center;
-}
-
-.slide-seta:hover {
-    background-color: rgba(2, 42, 79, 0.9);
-}
-
-#seta-esquerda {
-    left: 0;
-}
-
-#seta-direita {
-    right: 0;
-}
-
-/* Bolinhas indicadoras */
-#slide-indicadores {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
-#slide-indicadores span {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-#slide-indicadores span.ativo {
-    background-color: white;
 }
 
 /***** CONFIGURAÇÃO DO RODAPÉ *****/
@@ -200,4 +138,92 @@ body {
     text-align: center;
     line-height: 40px;
     color: white;
+}
+#Históriadaloja {
+	
+	width: 400px;
+    height: 50px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 0px;
+}
+
+
+#Carros {
+	width: 400px;
+	margin-right: 100px;
+}
+
+#texto-carro1 {
+	width: 400px;
+    height: 0px;
+    float: right;
+    margin-right: 250px;
+    margin-top: -820px;
+}
+
+#texto-carro2 {
+	width: 400px;
+    height: 0px;
+    float: right;
+    margin-right: 250px;
+    margin-top: -550px;
+}
+
+#texto-carro3 {
+	width: 400px;
+    height: 0px;
+    float: right;
+    margin-right: 250px;
+    margin-top: -270px;
+}
+
+#area {
+	width:320px;
+	height:300px;
+	margin-top:10px;
+	margin-left:320px;
+	float:left;
+}
+#area #formulario
+{
+	display:block;
+}
+
+fieldset
+{
+	background-color:#A7C0DC;
+	width:300px;
+	height:250px;
+}
+legend
+{
+	font-weight:bold;
+	font-family: "Segoe UI", "Arial", "Times Nem Roman";
+}
+#formulario label
+{
+	margin-right:5px;
+}
+#formulario input.campo_nome
+{
+	background-color:#D3D3D3;
+	margin-left:2px;
+	width:225px;
+}
+#formulario input.campo_email
+{
+	background-color:#D3D3D3;
+	margin-left:6px;
+	margin-top:2px;
+	width:225px;
+}
+#formulario textarea.msg
+{
+	background-color:#D3D3D3;
+}
+#formulario input.btn_submit
+{
+	border-style:dashed;
+	background-color:#D3D3D3;
 }
